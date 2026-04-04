@@ -1,9 +1,3 @@
-/**
- * KERNEL SUPREMO MICROTAMAGOPOU V2.0 - BY AZULSONIC
- */
-/**
- * 180 TRILHÕES DE GRAUS: ESCOLA, HOSPITAL, PASSEIO E VISITA
- */
 // LOGO TOUCH: HARDWARE CHECK DE STATUS
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     basic.showString("F:")
@@ -60,8 +54,8 @@ input.onButtonPressed(Button.B, function () {
     }
     basic.showString(local)
 })
-let sono = 0
 let inteligencia = 0
+let sono = 0
 let fome = 0
 let vivo = false
 let local = ""
@@ -72,6 +66,72 @@ let felicidade = 100
 local = "CASA"
 vivo = true
 basic.showIcon(IconNames.Happy)
+if (felicidade == 50) {
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . . . . .
+        . . . . .
+        . # # # .
+        `)
+} else if (fome == 50) {
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . . . . .
+        . . . . .
+        . # # # .
+        `)
+} else if (saude == 50) {
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . . . . .
+        . . . . .
+        . # # # .
+        `)
+} else if (sono == 50) {
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . . . . .
+        . . . . .
+        . # # # .
+        `)
+}
+if (felicidade == 10) {
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . . . . .
+        . # # # .
+        # . . . #
+        `)
+} else if (fome == 10) {
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . . . . .
+        . # # # .
+        # . . . #
+        `)
+} else if (saude == 10) {
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . . . . .
+        . # # # .
+        # . . . #
+        `)
+} else if (sono == 10) {
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . . . . .
+        . # # # .
+        # . . . #
+        `)
+}
 // LOOP DE VIDA (SINAL DE RÁDIO DE 1 BILHÃO DE GIGAS)
 loops.everyInterval(10000, function () {
     if (vivo) {
